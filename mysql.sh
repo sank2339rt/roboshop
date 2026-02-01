@@ -37,7 +37,7 @@ systemctl enable mysqld &>>$LOGS_FILE
 systemctl start mysqld &>>$LOGS_FILE
 VALIDATE $? "Starting MySQL Service"
 
-mysql_secure_installation --set-root-pass $MYSQL_ROOT_PASSWORD &>>$LOGS_FILE
+mysql -e "ALTER USER 'root'@'localhost' IDENTIFIED BY '$MYSQL_ROOT_PASSWORD';" &>>$LOGS_FILE
 VALIDATE $? "Setting MySQL root password"
 
 echo -e "$G MySQL setup completed successfully $N"
