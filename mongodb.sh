@@ -25,7 +25,7 @@ VALIDATE(){
     fi
 }
 
-cp $current_dir /mongo.repo /etc/yum.repos.d/mongo.repo &>>$LOGS_FILE
+cp $current_dir/mongo.repo /etc/yum.repos.d/mongo.repo &>>$LOGS_FILE
 VALIDATE $? "Adding Mongodb Repo"
 dnf install mongodb-org -y &>>$LOGS_FILE
 VALIDATE $? "Installing Mongodb"
