@@ -10,8 +10,8 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 
-REDIS_HOST=localhost
-MONGO_HOST=localhost
+REDIS_HOST=redis.sank2339.online
+MONGO_HOST=mongodb.sank2339.online
 
 if [ $USERID -ne 0 ]; then
     echo -e "$R Please run this script with root access $N" | tee -a $LOGS_FILE

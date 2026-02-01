@@ -10,8 +10,8 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 
-CART_HOST=localhost
-MYSQL_HOST=localhost
+CART_HOST=cart.sank2339.online
+MYSQL_HOST=mysql.sank2339.online
 MYSQL_ROOT_PASSWORD="RoboShop@1"
 
 if [ $USERID -ne 0 ]; then

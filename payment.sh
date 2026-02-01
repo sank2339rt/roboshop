@@ -10,9 +10,9 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 
-CART_HOST=localhost
-USER_HOST=localhost
-RABBITMQ_HOST=localhost
+CART_HOST=cart.sank2339.online
+USER_HOST=user.sank2339.online
+RABBITMQ_HOST=rabbitmq.sank2339.online
 AMQP_USER=roboshop
 AMQP_PASS=roboshop123
 
